@@ -1,0 +1,183 @@
+
+
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+body {
+  margin: 0;
+  background: rgb(245, 245, 245);
+  font-family: 'Open Sans', arial, sans-serif;
+  font-size: 0.875rem;
+  color: rgb(86, 90, 92);
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a {
+  font-weight: bold;
+  color: rgb(255, 89, 95);
+  text-decoration: none;
+}
+
+strong {
+  font-weight: 600;
+}
+
+h1{
+  font-size: 1.6rem;
+  padding: 10px;
+}
+
+
+.button {
+  background: rgb(255, 89, 95);
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.75rem 5rem;
+  border-bottom: 1px solid rgb(227, 25, 29);
+  border-radius: 2px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+
+.navbar{
+  background-color: wheat;
+  height: 60px;
+  padding-left: 25px;
+}
+
+.navbar h1{
+  color: purple;
+  font-size: 2rem;
+  font-weight: 500;
+  padding-top: 12px;
+}
+
+.navbar .vertline{
+  height: 60px;
+  width: fit-content;
+  padding-right: 25px;
+  border-right: 2px solid turquoise; 
+}
+
+.dogImage img{
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: 10% 10%;
+}
+
+.profile{
+  text-align: center;
+  padding: 50px;
+  border-bottom: 2px solid lightgray;
+}
+
+.profile .ownerDetails img{
+  border-radius: 50px;
+}
+
+.profile .ownerDetails .relationship{
+  color: lightslategray;
+}
+.profile .ownerDetails .name{
+  font-weight: bolder;
+}
+
+.profile .dogDetails{
+  padding: 10px;
+}
+
+.profile .icons{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  text-align: center;
+  margin: 25px;
+}
+
+.profile .icons img{
+  width: 40px;
+  height: 40px;
+}
+
+
+.noBark{
+  padding: 5px;
+}
+
+.booking{
+  text-align: center;
+  padding: 20px;
+  padding-top: 0px;
+}
+
+.booking h2{
+  font-size: 1.4rem;
+  padding: 20px;
+  padding-top: 0px;
+}
+
+.booking button{
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px;
+  padding-left: 30%;
+  padding-right: 30%;
+  font-weight: bolder;
+  border-radius: 2px;
+}
+
+.booking button:hover{
+  background-color: rgba(255, 0, 0, 0.75);
+}
+
+.booking b{
+  font-weight: bolder;
+  font-size: 1.8rem;
+}
+
+
+@media  screen and (min-width: 1060px){
+  .dogImage img{
+    height: 700px;
+  }
+
+  .profile{
+    margin: auto;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .icons aside{
+    padding: 15px;
+  }
+  .dogDetails{
+    padding-right: 30px;
+    border-right: 2px solid lightgray;
+  }
+
+  .booking{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+  }
+
+  .booking button{
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 120%;
+  }
+}
